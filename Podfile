@@ -9,4 +9,5 @@ target 'Indigo' do
 
 	pod 'Kingfisher'
 	pod 'Charts'
+	pod 'WMGaugeView'
 end

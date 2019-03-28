@@ -54,3 +54,6 @@ extension UIColor {
         }
     }
 }
+func deg2rad(_ number: CGFloat) -> CGFloat {
+    return number * .pi / 180
+}

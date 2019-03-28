@@ -12,6 +12,8 @@
 		DD7A58D1223A581C00A4BD67 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A58D0223A581C00A4BD67 /* OnboardingController.swift */; };
 		DD7E2491223A75E500021546 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E2490223A75E500021546 /* Extension.swift */; };
 		DD7E2493223A783E00021546 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD7E2492223A783E00021546 /* Slide.xib */; };
+		DDE0E7712242434C00E9C25E /* GaugeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0E7702242434C00E9C25E /* GaugeView.swift */; };
+		DDE0E7732242496D00E9C25E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0E7722242496D00E9C25E /* Constants.swift */; };
 		DDE1B1832233FDEE00B0DD77 /* Yellowtail-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDE1B1822233FDEE00B0DD77 /* Yellowtail-Regular.ttf */; };
 		DDFEEAA12233E61F001A9536 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEEAA02233E61F001A9536 /* AppDelegate.swift */; };
 		DDFEEAA32233E61F001A9536 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFEEAA22233E61F001A9536 /* ViewController.swift */; };
@@ -46,6 +48,8 @@
 		DD7A58D0223A581C00A4BD67 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		DD7E2490223A75E500021546 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		DD7E2492223A783E00021546 /* Slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		DDE0E7702242434C00E9C25E /* GaugeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeView.swift; sourceTree = "<group>"; };
+		DDE0E7722242496D00E9C25E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DDE1B1822233FDEE00B0DD77 /* Yellowtail-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yellowtail-Regular.ttf"; sourceTree = "<group>"; };
 		DDFEEA9D2233E61F001A9536 /* Indigo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Indigo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDFEEAA02233E61F001A9536 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				DD7E2490223A75E500021546 /* Extension.swift */,
+				DDE0E7722242496D00E9C25E /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -134,21 +139,19 @@
 		DDFEEA9F2233E61F001A9536 /* Indigo */ = {
 			isa = PBXGroup;
 			children = (
-				DD7E248F223A75D300021546 /* Utilities */,
-				DD7A58CD223A561800A4BD67 /* xib */,
 				DDFEEAD92233F2EE001A9536 /* Services */,
 				DDFEEAB92233E8A3001A9536 /* Model */,
 				DDFEEAB82233E89B001A9536 /* View */,
 				DDFEEAB72233E885001A9536 /* Controller */,
 				DDFEEAB22233E6D8001A9536 /* Supporting Files */,
 				DDFEEAA02233E61F001A9536 /* AppDelegate.swift */,
-				DDFEEAA22233E61F001A9536 /* ViewController.swift */,
+				DD7A58CD223A561800A4BD67 /* xib */,
+				DD7E248F223A75D300021546 /* Utilities */,
 				DDFEEAA42233E61F001A9536 /* Main.storyboard */,
 				DDFEEAA72233E620001A9536 /* Assets.xcassets */,
 				DDFEEAA92233E620001A9536 /* LaunchScreen.storyboard */,
 				DDFEEAAC2233E620001A9536 /* Info.plist */,
 				DDFEEAC02233F11E001A9536 /* fonts */,
-				DD7A58D0223A581C00A4BD67 /* OnboardingController.swift */,
 			);
 			path = Indigo;
 			sourceTree = "<group>";
@@ -166,6 +169,8 @@
 		DDFEEAB72233E885001A9536 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				DDFEEAA22233E61F001A9536 /* ViewController.swift */,
+				DD7A58D0223A581C00A4BD67 /* OnboardingController.swift */,
 				DDFEEABA2233E8BE001A9536 /* MenuVC.swift */,
 				DDFEEABC2233E8CD001A9536 /* MainVC.swift */,
 			);
@@ -178,6 +183,7 @@
 				DDFEEABE2233ED68001A9536 /* GradientView.swift */,
 				DDFEEADC2233F5CD001A9536 /* MenuCell.swift */,
 				DD7A58CB223A560300A4BD67 /* Silde.swift */,
+				DDE0E7702242434C00E9C25E /* GaugeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -320,6 +326,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Indigo/Pods-Indigo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Charts/Charts.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/WMGaugeView/WMGaugeView.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -327,6 +334,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Charts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WMGaugeView.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -369,9 +377,11 @@
 				DD7E2491223A75E500021546 /* Extension.swift in Sources */,
 				DDFEEABB2233E8BE001A9536 /* MenuVC.swift in Sources */,
 				DDFEEAA12233E61F001A9536 /* AppDelegate.swift in Sources */,
+				DDE0E7732242496D00E9C25E /* Constants.swift in Sources */,
 				DDFEEADB2233F304001A9536 /* MenuDataService.swift in Sources */,
 				DDFEEADD2233F5CD001A9536 /* MenuCell.swift in Sources */,
 				DD7A58D1223A581C00A4BD67 /* OnboardingController.swift in Sources */,
+				DDE0E7712242434C00E9C25E /* GaugeView.swift in Sources */,
 				DDFEEAB62233E71A001A9536 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
