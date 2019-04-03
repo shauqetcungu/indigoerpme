@@ -9,14 +9,19 @@
 import UIKit
 
 class MenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var tableView: UITableView!
+    var mainVC: MainVC!
+    var searchVC: SearchVC!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 50
+        
+        mainVC = self.revealViewController()?.frontViewController as? MainVC
+        searchVC = UIStoryboard(name: "SearchVC", bundle: nil).instantiateInitialViewController() as? SearchVC
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -40,6 +45,18 @@ class MenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat{
         return 60.0;
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch indexPath.row {
+        case 0:
+            self.revealViewController()?.pushFrontViewController(mainVC, animated: true)
+        case 1:
+            self.revealViewController()?.pushFrontViewController(searchVC, animated: true)
+        default:
+            break
+        }
+        
     }
     
 }

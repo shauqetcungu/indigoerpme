@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3E55BB53E48B5E9B58841373 /* Pods_Indigo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A6E1DFB46D49CB39C085DF9 /* Pods_Indigo.framework */; };
+		8DACCA4C2254C0560072529A /* SearchVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DACCA4B2254C0560072529A /* SearchVC.storyboard */; };
+		8DACCA4E2254C0640072529A /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DACCA4D2254C0640072529A /* SearchVC.swift */; };
 		DD7A58CC223A560300A4BD67 /* Silde.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A58CB223A560300A4BD67 /* Silde.swift */; };
 		DD7A58D1223A581C00A4BD67 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A58D0223A581C00A4BD67 /* OnboardingController.swift */; };
 		DD7E2491223A75E500021546 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7E2490223A75E500021546 /* Extension.swift */; };
@@ -44,6 +46,8 @@
 		2100A7D8E8683692CB8DE2B2 /* Pods-Indigo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Indigo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Indigo/Pods-Indigo.debug.xcconfig"; sourceTree = "<group>"; };
 		4A6E1DFB46D49CB39C085DF9 /* Pods_Indigo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Indigo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		894B625078A6763E36C67056 /* Pods-Indigo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Indigo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Indigo/Pods-Indigo.release.xcconfig"; sourceTree = "<group>"; };
+		8DACCA4B2254C0560072529A /* SearchVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SearchVC.storyboard; sourceTree = "<group>"; };
+		8DACCA4D2254C0640072529A /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		DD7A58CB223A560300A4BD67 /* Silde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Silde.swift; sourceTree = "<group>"; };
 		DD7A58D0223A581C00A4BD67 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		DD7E2490223A75E500021546 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -101,6 +105,15 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8DACCA4A2254BF320072529A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DDFEEAA42233E61F001A9536 /* Main.storyboard */,
+				8DACCA4B2254C0560072529A /* SearchVC.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		DD7A58CD223A561800A4BD67 /* xib */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,11 +156,11 @@
 				DDFEEAB92233E8A3001A9536 /* Model */,
 				DDFEEAB82233E89B001A9536 /* View */,
 				DDFEEAB72233E885001A9536 /* Controller */,
+				8DACCA4A2254BF320072529A /* Storyboards */,
 				DDFEEAB22233E6D8001A9536 /* Supporting Files */,
 				DDFEEAA02233E61F001A9536 /* AppDelegate.swift */,
 				DD7A58CD223A561800A4BD67 /* xib */,
 				DD7E248F223A75D300021546 /* Utilities */,
-				DDFEEAA42233E61F001A9536 /* Main.storyboard */,
 				DDFEEAA72233E620001A9536 /* Assets.xcassets */,
 				DDFEEAA92233E620001A9536 /* LaunchScreen.storyboard */,
 				DDFEEAAC2233E620001A9536 /* Info.plist */,
@@ -173,6 +186,7 @@
 				DD7A58D0223A581C00A4BD67 /* OnboardingController.swift */,
 				DDFEEABA2233E8BE001A9536 /* MenuVC.swift */,
 				DDFEEABC2233E8CD001A9536 /* MainVC.swift */,
+				8DACCA4D2254C0640072529A /* SearchVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -295,6 +309,7 @@
 				DD7E2493223A783E00021546 /* Slide.xib in Resources */,
 				DDFEEAD72233F135001A9536 /* Roboto-Thin.ttf in Resources */,
 				DDFEEAAB2233E620001A9536 /* LaunchScreen.storyboard in Resources */,
+				8DACCA4C2254C0560072529A /* SearchVC.storyboard in Resources */,
 				DDFEEAA82233E620001A9536 /* Assets.xcassets in Resources */,
 				DDFEEACF2233F135001A9536 /* Roboto-Medium.ttf in Resources */,
 				DDFEEAD02233F135001A9536 /* Roboto-ThinItalic.ttf in Resources */,
@@ -376,6 +391,7 @@
 				DDFEEABF2233ED68001A9536 /* GradientView.swift in Sources */,
 				DD7E2491223A75E500021546 /* Extension.swift in Sources */,
 				DDFEEABB2233E8BE001A9536 /* MenuVC.swift in Sources */,
+				8DACCA4E2254C0640072529A /* SearchVC.swift in Sources */,
 				DDFEEAA12233E61F001A9536 /* AppDelegate.swift in Sources */,
 				DDE0E7732242496D00E9C25E /* Constants.swift in Sources */,
 				DDFEEADB2233F304001A9536 /* MenuDataService.swift in Sources */,
